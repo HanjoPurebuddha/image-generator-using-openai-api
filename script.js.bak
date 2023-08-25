@@ -30,25 +30,6 @@ for (let i = 1; i <= 10; i++) {
 let imageSizes = sizeSelect.value;
 let numImages = parseInt(numImagesSelect.value);
 let apiKey = "";
-  sizeOptions.forEach((size) => {
-    const option = document.createElement("option");
-    option.value = size;
-    option.textContent = size;
-    optionsFragment.appendChild(option);
-  });
-
-  sizeSelect.appendChild(optionsFragment);
-
-  for (let i = 1; i <= 10; i++) {
-    const option = document.createElement("option");
-    option.value = i;
-    option.textContent = i;
-    numImagesSelect.appendChild(option);
-  }
-
-  let imageSizes = sizeSelect.value;
-  let numImages = parseInt(numImagesSelect.value);
-  let apiKey = "";
 
   function generateImage() {
     if (apiKey === "") {

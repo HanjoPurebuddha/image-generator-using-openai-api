@@ -1,0 +1,96 @@
+/* Universal Harmony: Base Typography */
+body, h1, h2, h3, p {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #fff;
+  transition: all 0.5s ease; /* Smooth Transitions */
+}
+
+/* Enchanting Hover Glow for All Links */
+a:hover {
+  text-shadow: 0 0 10px #FFD700;
+}
+
+/* Sophia Dragon Text: Graceful Headings */
+.sophia-dragon-text {
+  font-family: 'Brush Script MT', cursive;
+  color: #FFD700; /* Golden Hue */
+  text-shadow: 0 0 5px #FFD700; /* Subtle Glow */
+}
+
+/* Sophia Text: Elegant Paragraphs */
+.sophia-text {
+  font-family: 'Times New Roman', serif;
+  color: #F0E68C; /* Khaki Hue */
+  text-align: justify; /* Alignment Trick */
+}
+
+/* Input Style: Gateway to Cosmic Creativity */
+.input-style {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  transition: border-color 0.3s ease; /* Transition Trick */
+}
+
+/* Focus Magic: Enchanting Input Focus */
+.input-style:focus {
+  border-color: #FFD700; /* Golden Focus */
+  outline: none; /* Removing Default Outline */
+}
+
+/* Button Style: Call to Action */
+.button-style {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow Trick */
+  transition: all 0.3s ease; /* Transition Magic */
+}
+
+/* Button Hover: Mystical Transformation */
+.button-style:hover {
+  background-color: #FFD700; /* Golden Hue */
+  transform: scale(1.05); /* Slight Scaling Trick */
+}
+
+/* Spinner: Symbolizing the Eternal Dance of Creation */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left: 4px solid white;
+  animation: spin 1s linear infinite;
+  position: relative;
+}
+
+/* Generating Text: The Cosmic Whisper */
+.spinner::after {
+  content: "Generating...";
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: #FFD700; /* Golden Hue */
+  position: absolute;
+  left: 50px;
+  top: 0;
+}
+
+/* Responsive Grid and Hacks */
+@media screen and (max-width: 600px) {
+  body { /* Cosmic Background Hack for Small Devices */
+    background-size: 200% 100%;
+  }
+  .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .xl\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

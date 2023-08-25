@@ -35,7 +35,7 @@ let apiKey = "";
     if (apiKey === "") {
       apiKey = apiInput.value.trim() || api;
       if (apiKey === "") {
-        apiKey = "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"//HY 
+        apiKey = ""//HY 
         return;
       }
       apiDiv[0].classList.add("hidden");
